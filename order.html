@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Παραγγελίες - Φοιτητική Παραγγελία Φαγητού</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Παραγγελίες</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Αρχική</a></li>
+                <li><a href="menu.html">Μενού</a></li>
+                <li><a href="order.html">Παραγγελίες</a></li>
+                <li><a href="contact.html">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Κάντε την παραγγελία σας</h2>
+        <form action="/submit_order" method="post">
+            <label for="name">Όνομα:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="food">Επιλογή Φαγητού:</label>
+            <select id="food" name="food" required>
+                <option value="pizza">Πίτσα</option>
+                <option value="gyros">Γύρος</option>
+                <option value="salad">Σαλάτα</option>
+                <option value="souvlaki">Σουβλάκι</option>
+            </select>
+            <label for="quantity">Ποσότητα:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <button type="submit">Παραγγελία</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Φοιτητική Παραγγελία Φαγητού</p>
+    </footer>
+</body>
+</html>
